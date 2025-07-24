@@ -1,69 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hasanuddin Al-Habib</title>
+  <title>Personal Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <header class="navbar">
     <div class="container">
-      <h1 class="logo">Hasanuddin Al-Habib</h1>
+      <h1>My Portfolio</h1>
       <nav>
+        <div class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#work">Work</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <button id="darkModeToggle">🌓</button>
     </div>
   </header>
 
-  <main>
-    <section id="about" class="section">
-      <div class="container">
-        <h2>Hi, I'm Hasanuddin 👋</h2>
-        <p>A lecturer and researcher in Computer Vision and AI. I build intelligent systems to support environmental and public health goals.</p>
-      </div>
-    </section>
+  <section id="about" class="section container">
+    <h2>About Me</h2>
+    <p>Hello! I'm a researcher and developer passionate about innovation and impactful technology.</p>
+  </section>
 
-    <section id="work" class="section">
-      <div class="container">
-        <h2>Selected Projects</h2>
-        <div class="project">
-          <h3>Drone-based Monitoring</h3>
-          <p>Using YOLO and Kalman Filter for object tracking on drone footage.</p>
-        </div>
-        <div class="project">
-          <h3>Healthcare App</h3>
-          <p>Mobile solution for maternal and elderly care using cloud-based data management.</p>
-        </div>
-        <div class="project">
-          <h3>Football Analytics</h3>
-          <p>Visual tracking of player movement and ball interactions for performance analysis.</p>
-        </div>
-      </div>
-    </section>
+  <section id="education" class="section container">
+    <h2>Education</h2>
+    <p>Bachelor of Science in Computer Science - Example University</p>
+  </section>
 
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>Interested in collaborating or want to say hi? Let's connect.</p>
-        <a href="mailto:youremail@example.com" class="btn">Say Hello</a>
-      </div>
-    </section>
-  </main>
+  <section id="research" class="section container">
+    <h2>Research</h2>
+    <p>Research in Computer Vision, AI for Social Good, and Environmental Sensing.</p>
+  </section>
+
+  <section id="portfolio" class="section container">
+    <h2>Portfolio</h2>
+    <div class="project">
+      <h3>Project A</h3>
+      <p>A web application for tracking environmental changes using drone imagery.</p>
+    </div>
+    <div class="project">
+      <h3>Project B</h3>
+      <p>A deep learning model for recognizing player movement in sports videos.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section container">
+    <h2>Contact Me</h2>
+    <p>Email: yourname@example.com</p>
+    <a class="btn" href="mailto:yourname@example.com">Send Email</a>
+  </section>
 
   <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Hasanuddin Al-Habib. All rights reserved.</p>
-    </div>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
   </footer>
 
-  <script>
-    // Smooth scroll behavior is default in CSS. Can add custom JS here if needed.
-  </script>
+  <script src="script.js"></script>
 </body>
+
 </html>
