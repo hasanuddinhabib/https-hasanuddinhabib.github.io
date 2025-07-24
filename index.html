@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyPortfolio</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="section hero">
+    <div class="content">
+      <h1>Hello, I'm Hasan</h1>
+      <p>Researcher | Educator | Developer</p>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I am passionate about computer vision, machine learning, and academic research. I work as a lecturer and am currently pursuing advanced studies in tracking, remote sensing, and autonomous systems.</p>
+  </section>
+
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>PhD Candidate</strong> – Computer Vision (Planned)</li>
+      <li><strong>Master’s Degree</strong> – Computer Science, XYZ University</li>
+      <li><strong>Bachelor’s Degree</strong> – Informatics, ABC University</li>
+    </ul>
+  </section>
+
+  <section id="research" class="section">
+    <h2>Research</h2>
+    <p>Current research topics include multi-object tracking in sports, drone-based land monitoring, and hybrid deep learning for segmentation.</p>
+  </section>
+
+  <section id="portfolio" class="section">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+      <div class="project-card">
+        <h3>YOLO + Kalman Filter</h3>
+        <p>Sports tracking for soccer and tennis.</p>
+      </div>
+      <div class="project-card">
+        <h3>Drone Land Monitoring</h3>
+        <p>Autonomous land change detection using aerial imagery.</p>
+      </div>
+      <div class="project-card">
+        <h3>Mask R-CNN</h3>
+        <p>Instance segmentation for autonomous vehicles.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Email: hasan@example.com</p>
+    <p>LinkedIn: linkedin.com/in/hasan</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hasanuddin Al-Habib. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
